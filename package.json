@@ -1,0 +1,22 @@
+{
+  "name": "spotify-hw-3",
+  "version": "0.0.1",
+  "description": "Web app using Spotify api for cs 398 homework 3",
+  "main": "js/app.js",
+  "dependencies": {
+    "react": "~0.11.2"
+  },
+  "devDependencies": {
+    "browserify": "~5.12.1",
+    "reactify": "~0.14.0",
+    "watchify": "~1.0.6"
+  },
+  "scripts": {
+    "start": "watchify -o js/bundle.js -v -d ."
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  }
+}
